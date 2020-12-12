@@ -24,10 +24,10 @@ recovery = data[6].text
 
 def insert_todb(last_update, confirm_casses, recovery, dead, new):
     try:
-        connection = mysql.connector.connect(host='34.122.124.80',
-                                             database='smart_home',
-                                             user='nsr-admin',
-                                             password='natthapon024299')
+        connection = mysql.connector.connect(host='',
+                                             database='',
+                                             user='',
+                                             password='')
         query = """insert into covid19_thai (last_update,confirm_case,recovery,dead,new) VALUES (%s,%s,%s,%s,%s)"""
         attr = (last_update, confirm_casses, recovery, dead, new)
         cursor = connection.cursor()
